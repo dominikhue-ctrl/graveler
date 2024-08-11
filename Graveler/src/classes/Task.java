@@ -5,13 +5,13 @@ import java.util.concurrent.Callable;
 
 public class Task implements Callable<int[]> 
 {
-	private int attempts;
+	private long attempts;
 	
-	public Task(int attempts) {
+	public Task(long attempts) {
 	    this.attempts= attempts;
 	  }
 
-	public static int[] roll( int attempts )
+	public static int[] roll( long attempts )
 	{
 		
 		// Result-Array that saves how many times how often he got paralyzed

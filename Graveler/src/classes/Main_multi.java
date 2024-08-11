@@ -3,6 +3,7 @@
  */
 package classes;
 
+import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ExecutionException;
@@ -28,6 +29,9 @@ import java.util.concurrent.TimeUnit;
  * down time.
  * This works well as dividing the same code into 100 Tasks speeds the whole code up 
  * from ~255 seconds to around 24.24 seconds
+ * 
+ * edit: i changed some types from integer to long to allow for more runs if needed
+ * 		 this didn't change how long it took for 1000000000
  */
 public class Main_multi
 {
@@ -38,7 +42,7 @@ public class Main_multi
 		//Change run and task_number as needed but make sure run is dividable by task_number
 		
 		// How many Runs should be done
-		int run = 1000000000;
+		long run = 1000000000;
 		
 		// In how many Tasks should the work be split
 		// In my case around 100 seemed to be a good sweetspot for 1000000000
