@@ -42,7 +42,9 @@ public class Main_multi
 		// task_number
 
 		// How many Runs should be done
-		long run = 1000000000 * 1;	//Change the 1 if more Runs are needed
+		long run = 1000000000;
+		
+		run = run * 1; //Change the 1 if more Runs are needed
 
 		// In how many Tasks should the work be split
 		// In my case around 100 seemed to be a good sweetspot for 1000000000
